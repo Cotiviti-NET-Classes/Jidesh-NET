@@ -1,0 +1,46 @@
+git status
+git add .
+git commit -m "message" its better to start message with verb
+git push
+
+
+install dot net 6
+list -- to show list of possible project 
+
+dotnet new console -n csharpbasic
+
+project will be created 
+
+in program.console
+console.WriteLine("Hello world");
+
+go to project folder
+
+dotnet build --to build project
+dotnet run -- to run project
+
+One class in one file and class name must be same as file name
+
+
+
+namespace is virtual container of different classes
+shif +alt +T +F for auto formatting
+
+using System;
+
+namespace ABC{
+
+class program
+{
+
+    public static void Main()
+    {
+        Console.WriteLine("Hello world");
+    }
+}
+
+}
+
+
+
+top level statement
