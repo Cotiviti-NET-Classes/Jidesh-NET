@@ -1,0 +1,14 @@
+ASP.NET core is new version of  ASP.NET by Microsoft. 
+It is an open-source web framework which can be run on 
+Windows, Mac, or Linux.
+
+Install donet sdk in your machine
+
+dotnet --
+
+
+
+
+
+
+
