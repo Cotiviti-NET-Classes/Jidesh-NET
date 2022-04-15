@@ -1,25 +1,18 @@
 
-namespace task;
+namespace Task;
 class Assignment
 {
 
-    int sum(int []arr)
+    public string sumandavg(int []arr)
     {
         int add=0;
+        int avg;
         for( int i=0;i<arr.Length;i++)
         {
             add +=arr[i];
         }
-        return add;
-    }
-    int average(int []arr)
-    {
-        int add1=0,avg;
-        for( int i=0;i<arr.Length;i++)
-        {
-         add1 +=arr[i];
-        }
-        avg = adds/arr.Length;
-        return avg;
+        avg=add/arr.Length;
+        return $"the sum of array is ${add} and average is ${avg}";
+        
     }
 }
