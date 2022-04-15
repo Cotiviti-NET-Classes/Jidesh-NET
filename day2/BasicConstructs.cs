@@ -1,133 +1,134 @@
-using System;
+// using System;
 
 
-namespace LearningBasic;
-class Basic
-{
-    void LearnBasics()
-    {
+// namespace LearningBasic;
+// class Basic
+// {
+//     void LearnBasics()
+//     {
 
-        //Data type
+//         //Data type
 
-        // Number : Integer and floating point number
+//         // Number : Integer and floating point number
 
-        byte a = 239;
+//         byte a = 239;
 
-        //8 bits, 1 bit sign bit (MSB)
-        // 01111111 = +127,
-        // 10000001 =-1
+//         //8 bits, 1 bit sign bit (MSB)
+//         // 01111111 = +127,
+//         // 10000001 =-1
 
-        short b = 3224;
-        ushort bb = 12;
-        int c = 214235234;
-        long d = 214124235432;
-        //ulong also exist
-        float e = 232.256456f;
-        double f = 235234534.34535;
-        decimal g = 12423534534.345235m;
+//         short b = 3224;
+//         ushort bb = 12;
+//         int c = 214235234;
+//         long d = 214124235432;
+//         //ulong also exist
+//         float e = 232.256456f;
+//         double f = 235234534.34535;
+//         decimal g = 12423534534.345235m;
 
-        bool h = true;
-        char i = 'j';
-        string j = "jidesh";
+//         bool h = true;
+//         char i = 'j';
+//         string j = "jidesh";
 
-        object o = "234";
+//         // object o = "234";
 
-        //to make variable nullable
-        //null able
-        int? population = null;
+//         //to make variable nullable
+//         //null able
+//         // int? population = null;
 
-        //Array
+//         //Array
 
-        float[] points = new float[10];
-        float[] point1 = { 2.4f, 4.5f };
-
-
-        //multidimention
-        string[,] names = new string[2, 3];
+//         // float[] points = new float[10];
+//         // float[] point1 = { 2.4f, 4.5f };
 
 
-        // Jagged array
-        int[][] ages = new int[3][];
-
-        ages[0] = new int[4];
-        ages[1] = new int[2];
-        ages[2] = new int[6];
-
-        // var keyword
-
-        string name = "jidesh";
-
-        //branching
-
-        bool isValid = (5 == 5);
-        bool isValid1 = (3 > 2);
-        if (isValid)
-        {
-            Console.Write("");
-        }
-        else if (isValid1)
-        {
-            Console.Write("");
-        }
-        else
-        {
-
-        }
+//         //multidimention
+//         // string[,] names = new string[2, 3];
 
 
-        //switch case
+//         // Jagged array
+//         // int[][] ages = new int[3][];
+
+//         // ages[0] = new int[4];
+//         // ages[1] = new int[2];
+//         // ages[2] = new int[3];
+
+//         // var keyword
+
+//         // string name = "jidesh";
+
+//         //branching
+
+//         // bool isValid = (5 == 5);
+//         // bool isValid1 = (3 > 2);
+//         // if (isValid)
+//         // {
+//         //     Console.Write("");
+//         // }
+//         // else if (isValid1)
+//         // {
+//         //     Console.Write("");
+//         // }
+//         // else
+//         // {
+//         //     Console.Write("");
+//         // }
+
+
+//         //switch case
 
 
 
-        var s = 'r';
-        switch (s)
-        {
-            case 'A':
-                break;
+//         // var s = 'r';
+//         // switch (s)
+//         // {
+//         //     case 'A':
+//         //         break;
 
-            case 'b':
-
-
-                break;
+//         //     case 'b':
 
 
-            default:
-
-                break;
-
-        }
+//         //         break;
 
 
-        //loops
-        for(int loopVariable=5;loopVariable<15;loopVariable++)
-        {
-            Console.Write(loopVariable);
-        }
+//         //     default:
 
-        //while loop
-        int apple=1;
-        while(apple <=10)
-        {
-            Console.Write(apple);
-            apple++;
-        }
+//         //         break;
+
+//         // }
 
 
-        //for each
-        foreach(var p in points)
-        {
-            Console.WriteLine(p);
-        }
+//         //loops
+//         // for(int loopVariable=5;loopVariable<15;loopVariable++)
+//         // {
+//         //     Console.Write(loopVariable);
+//         // }
+
+//         //while loop
+//         // int apple=1;
+//         // while(apple <=10)
+//         // {
+//         //     Console.Write(apple);
+//         //     apple++;
+//         // }
 
 
-        //operators
-        //ternary operator
-        var var1= isValid ? "print if true" : "print if false";
-        // null coalesing
-        var val2 = name ?? "Govinda";
-        //null propagation
-        // var val3 = name?.Length;
+//         //for each
+//         // foreach(var p in points)
+//         // {
+//         //     Console.WriteLine(p);
+//         // }
 
-        // string name!; //null supressing/forgiving
-        public string Name {get;set;} = default!;
-    }
+
+//         //operators
+//         //ternary operator
+//         // var var1= isValid ? "print if true" : "print if false";
+//         // null coalesing
+//         // var val2 = name ?? "Govinda";
+//         //null propagation
+//         // var val3 = name?.Length;
+
+//         // string name!; //null supressing/forgiving
+//         public string Name {get;set;} = default!;
+//     }
+// }
