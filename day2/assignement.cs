@@ -1,6 +1,6 @@
 
 namespace task;
-class Assignment()
+class Assignment
 {
 
     int sum(int []arr)
@@ -14,12 +14,12 @@ class Assignment()
     }
     int average(int []arr)
     {
-        int add;
+        int add1=0,avg;
         for( int i=0;i<arr.Length;i++)
         {
-            add +=arr[i];
+         add1 +=arr[i];
         }
-        average = add/arr.Length;
-        return average;
+        avg = adds/arr.Length;
+        return avg;
     }
 }
