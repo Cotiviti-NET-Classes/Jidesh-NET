@@ -4,11 +4,59 @@ Windows, Mac, or Linux.
 
 Install donet sdk in your machine
 
-dotnet --
+check in cmd and verify the installation
+
+type
+dotnet --version
+to check the version
 
 
 
+type 
+dotnet new --list to view all the tamplate
+
+to create console app
+you can write following command in you terminal
+
+dotnet new console -n appname
 
 
+Unlike languages like Ruby and JavaScript, 
+C# has you define the type of each data in a program. 
+Assigning a type essentially tells a computer what operations 
+can and cannot be performed on a piece of data. 
+This style of coding helps programmers avoid a large class 
+of errors that are common to Ruby and JavaScript
+
+If you’re familiar with Java, you’ll recognize 
+how C# programs are built—by defining objects 
+that interact with each other, which makes code 
+reusable and easy to manage.
+
+Console.WriteLine() is a command that prints text to a console. 
+Whatever is in between the parentheses will be printed 
+to the console!
 
 
+Getting Input
+The command Console.ReadLine() captures 
+text that a user types into the console.
+
+static void main()
+{
+    console.WriteLine("How old are you");
+    string input = Console.ReadLine();
+    console.WriteLine($"You are {input} years old");
+}
+
+
+Comments
+Ironically, an essential tool in programming is the ability 
+to tell a computer to ignore a part of a program. 
+Text written in a program but not run by the computer 
+is called a comment. 
+In C#, anything after a // or between /* and */ is a comment. 
+In spoken word we call these symbols “forward slashes” and “asterisks”.
+
+
+C# have go very good community support

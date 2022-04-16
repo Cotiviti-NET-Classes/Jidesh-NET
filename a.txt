@@ -5,7 +5,9 @@ git push
 
 
 install dot net 6
-list -- to show list of possible project 
+dotnet new --list   -- to show list of possible project 
+
+
 
 dotnet new console -n csharpbasic
 
