@@ -4,29 +4,7 @@ Windows, Mac, or Linux.
 
 Install donet sdk in your machine
 
-check in cmd and verify the installation
-
-type
-dotnet --version
-to check the version
-
-
-
-type 
-dotnet new --list to view all the tamplate
-
-to create console app
-you can write following command in you terminal
-
-dotnet new console -n appname
-
-
-Unlike languages like Ruby and JavaScript, 
-C# has you define the type of each data in a program. 
-Assigning a type essentially tells a computer what operations 
-can and cannot be performed on a piece of data. 
-This style of coding helps programmers avoid a large class 
-of errors that are common to Ruby and JavaScript
+dotnet --
 
 If you’re familiar with Java, you’ll recognize 
 how C# programs are built—by defining objects 
