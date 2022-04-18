@@ -1,0 +1,58 @@
+using System;
+
+namespace LearnclassObj;
+
+
+class Student
+{
+    public Student(){
+
+    }
+    public Student(string name, string sem, string mobileNum)
+    {
+        this.name=name;
+        this.semester=sem;
+        this.mobileNumber=mobileNum;
+
+    }
+
+      
+    public string name;
+    public string semester;
+    public string mobileNumber;
+
+    void Enroll(string sem)
+    {
+        Console.WriteLine($"{name}+  enrolled on +{sem}");
+    }
+}
+
+
+class SeniorStudent
+{
+    public string electiveSubject;
+    void EnrollOnInternProgram(string company)
+    {
+        Console.WriteLine($"{name} is interning on {company}");
+    }
+}
+
+
+//class classa: classb, classc
+//multiple inheritance is not possible
+
+
+//interface
+
+// It helps to encapsulate the behaviour
+
+// we can inheritate multiple inheritance
+class Almuni: SeniorStudent,ILivingThings
+{
+    
+}
+
+interface ILivingThings
+{
+    
+}
