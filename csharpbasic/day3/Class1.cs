@@ -1,4 +1,8 @@
 ﻿namespace day3;
+
+
+
+//access modifier==> public ,protected, internal
 public class Person
 {
     public int age;
@@ -6,6 +10,13 @@ public class Person
     //internal is accessed within the project
     private string phone;
 
+    internal string SetName(string n)
+    {
+        if(n != "")
+        {
+            name=n;
+        }
+    }
 }
 
 class A
