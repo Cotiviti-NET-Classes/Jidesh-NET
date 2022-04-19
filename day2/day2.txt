@@ -1,7 +1,0 @@
-Data type in C#
-
-Number: Integers and floating point Number
-
-byte a = 23
-
-byte is smallest possible 
