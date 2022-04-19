@@ -1,48 +1,48 @@
 ﻿// using LearningBasic;
 // using Task;
-// using assignment2;
+using assignment2;
 
 using assignment2final;
 
-List<Order> orders = AddSampleData();
-CustomerModel customer=GetCustomer();
-foreach (Order order in orders)
-{
-    order.totalamount(customer);
-    if (order is Order ord)
-    {
-        Console.WriteLine($"Hey {customer.name} your bill amount is {ord.totalamount}");
-    }
-}
+// List<Order> orders = AddSampleData();
+// CustomerModel customer=GetCustomer();
+// foreach (Order order in orders)
+// {
+//     order.totalamount(customer);
+//     if (order is Order ord)
+//     {
+//         Console.WriteLine($"Hey {customer.name} your bill amount is {ord.totalamount}");
+//     }
+// }
 
-Console.ReadLine();
+// Console.ReadLine();
 
-static CustomerModel GetCustomer()
-{
-    return new CustomerModel
-    {
-        cid=1,
-        name="jidesh",
-        email="jideshvaidya@gmail.com",
-        city="lalitpur",
-        phone="9860637891"
+// static CustomerModel GetCustomer()
+// {
+//     return new CustomerModel
+//     {
+//         cid=1,
+//         name="jidesh",
+//         email="jideshvaidya@gmail.com",
+//         city="lalitpur",
+//         phone="9860637891"
 
-    };
-}
+//     };
+// }
 
-static List<IProductModel> AddSampleData()
-{
-    List<IProductModel> output = new List<IProductModel>();
+// static List<IProductModel> AddSampleData()
+// {
+//     List<IProductModel> output = new List<IProductModel>();
 
-    output.Add(new Order { cid=1,name="Jidesh",email="jideshvaidya@gmail.com",city="lalitpur",phone="9860637891",pid=1,pname="gas",prate=1600,pqty=2});
+//     output.Add(new Order { cid=1,name="Jidesh",email="jideshvaidya@gmail.com",city="lalitpur",phone="9860637891",pid=1,pname="gas",prate=1600,pqty=2});
    
-    return output;
-}
+//     return output;
+// }
 
 
 //assignment2final
 
-//assignment2
+// assignment2
 // List<IProductModel> cart = AddSampleData();
 // CustomerModel customer = GetCustomer();
 // foreach (IProductModel prod in cart)

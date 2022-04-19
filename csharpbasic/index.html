@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: #96D4D4;
+    }
+    table, th, td {
+    border: 20px solid blue;
+    }
+ 
+    .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+    </style>
+</head>
+<body>
+    <pre>
+ASP.NET core is new version of  ASP.NET by Microsoft. 
+It is an open-source web framework which can be run on 
+Windows, Mac, or Linux.
+
+Install donet sdk in your machine
+
+check in cmd and verify the installation
+
+type
+dotnet --version
+to check the version
+
+
+
+type 
+dotnet new --list to view all the tamplate
+
+to create console app
+you can write following command in you terminal
+
+dotnet new console -n appname
+
+
+Unlike languages like Ruby and JavaScript, 
+C# has you define the type of each data in a program. 
+Assigning a type essentially tells a computer what operations 
+can and cannot be performed on a piece of data. 
+This style of coding helps programmers avoid a large class 
+of errors that are common to Ruby and JavaScript
+
+If you’re familiar with Java, you’ll recognize 
+how C# programs are built—by defining objects 
+that interact with each other, which makes code 
+reusable and easy to manage.
+
+Console.WriteLine() is a command that prints text to a console. 
+Whatever is in between the parentheses will be printed 
+to the console!
+
+
+Getting Input
+The command Console.ReadLine() captures 
+text that a user types into the console.
+
+static void main()
+{
+    console.WriteLine("How old are you");
+    string input = Console.ReadLine();
+    console.WriteLine($"You are {input} years old");
+}
+
+
+Comments
+Ironically, an essential tool in programming is the ability 
+to tell a computer to ignore a part of a program. 
+Text written in a program but not run by the computer 
+is called a comment. 
+In C#, anything after a // or between /* and */ is a comment. 
+In spoken word we call these symbols “forward slashes” and “asterisks”.
+
+
+C# have go very good community support
+
+
+Let's know something comman about asp.net core
+
+asp.net core is an open source framework
+
+asp.net core application can target all .net framwork and standard
+
+asp.net core supports all windows, linux and machine
+
+Main method is entry point of ASP.NET application
+
+static files can be served from wwwroot folder
+
+the host for asp.net core web application is configured in program.cs file
+
+asp.net core web application uses kestrel as an internal web server by default
+
+first command in .net CLI is dotnet
+
+startup class must include configure method
+
+configureservice method in startup class is use to registering services with IOC container
+
+Millware executes on each request in asp.net core application
+
+middleware can be configured using instance of type IApplicationBuilder
+
+Middleware can be configured in Configure method of startup class
+
+ASPNETCORE_ENVIRONMENT is environment variable in ASP.NET core application
+
+useExceptionHandler extension method allow us to configure custom error handling route
+
+Microsoft.AspNetCore.StaticFiles middleware must be installed to serve static files in ASP.NET Core application
+
+.net core application are portable and self contained
+
+self contained application can be installed and run on any platform without .net core runtime
+
+we should target .net standard for the code sharing of .net core application
+
+to create logs in asp.net core application we need to get ILogger objcet from IoC container
+
+
+
+
+The main objective of .NET Core is to make .NET Framework 
+open-source, cross-platform compatible that can be used in a 
+wide variety of verticals, from the data center 
+to touch-based devices.
+
+.net core includes CLI tools for development and continuios integration
+
+can be deploy user-wide or system wide or with Docker Containers
+
+
+
+Both dotnet 3.1  and .NET Core 2.1 will have long term support.
+
+.NET Core 3.x applications only run on .NET Core Framework.
+
+.NET Core 2.x applications run on .NET Core as well as .NET Framework.
+
+.NET Core Composition
+The .NET Core Framework composed of the following parts:
+
+
+<table> 
+    <tr>
+        <td>
+.netcore
+    <tr>
+<td>CLI Tools</td>
+    </tr> 
+    <tr>
+<td> Roslyn</td>
+     </tr> 
+    <tr>
+<td>CoreFX</td>
+    </tr> 
+    <tr>
+<td>CoreCLR</td>
+    </tr>
+
+
+</td>
+</tr>
+</table>
+
+
+
+asp.net core web application project structure
+
+you get the following folder structure
+
+obj 
+pages
+properties
+wwwroot
+appname.csproj
+appnamesettings.Development.json
+appnamesettings.json 
+program.cs
+
+
+
+
+.csproj file includes setting related to targeted .NET Framework,
+project folder , NuGet package references etc
+
+
+Properties
+The Properties node includes launchSettings.json file which includes Visual Studio profiles of debug settings.
+
+
+wwwroot folder
+
+wwwroot folder in the ASP.NET Core project is treated as a web root folder. 
+Static files can be stored in any folder under the web root and accessed 
+with a relative path to that root.
+Generally, there should be separate folders for the different types of 
+static files such as JavaScript, CSS, Images, library scripts etc.
+
+you need to include a middleware for serving static files in the Configure method of Startup.cs.
+
+
+
+
+CLI Tools: A set of tooling for development and deployment.
+Roslyn: Language compiler for C# and Visual Basic
+CoreFX: Set of framework libraries.
+CoreCLR: A JIT based CLR (Command Language Runtime).
+
+The following is a command structure.
+
+dotnet < command > < argument > < option >
+
+
+    <div class="table table-responsive">
+    <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Basic Commands
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new" target="_blank">new</a>  
+                    </td>
+                    <td>Creates a new project, configuration file, or solution based on the specified template.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore" target="_blank">restore</a> 
+                    </td>
+                    <td>Restores the dependencies and tools of a project.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build" target="_blank">build</a>  
+                    </td>
+                    <td>Builds a project and all of its dependencies.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run" target="_blank">Run</a>  
+                    </td>
+                    <td>Runs source code without any explicit compile or launch commands.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish" target="_blank">publish</a>  
+                    </td>
+                    <td>Packs the application and its dependencies into a folder for deployment to a hosting system.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test" target="_blank">test</a>  
+                    </td>
+                    <td>Executes unit tests.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-vstest" target="_blank">vtest</a>  
+                    </td>
+                    <td>Runs tests from the specified files.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-pack" target="_blank">pack</a>  
+                    </td>
+                    <td>Packs the code into a NuGet package.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-clean" target="_blank">clean</a>  
+                    </td>
+                    <td>Cleans the output of a project.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-sln" target="_blank">sln</a>  
+                    </td>
+                    <td>Modifies a .NET Core solution file.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-help" target="_blank">help</a>  
+                    </td>
+                    <td>Display help on the specified command
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-store" target="_blank">store</a>  
+                    </td>
+                    <td>Stores the specified assemblies in the runtime package store.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table table-responsive">
+    <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="col-xs-3">
+                        Project Modification Commands
+                    </th>
+                    <th class="col-xs-9">
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package" target="_blank">add package</a>  
+                    </td>
+                    <td>Adds a package reference to a project.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-reference" target="_blank">add reference</a>  
+                    </td>
+                    <td>Adds project-to-project (P2P) references.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-remove-package" target="_blank">remove package</a>  
+                    </td>
+                    <td>Removes package reference from the project.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-remove-reference" target="_blank">remove reference</a>  
+                    </td>
+                    <td>Removes project reference
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-list-reference" target="_blank">list reference</a>  
+                    </td>
+                    <td>Lists all project-to-project references
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div class="table table-responsive">
+    <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="col-xs-3">
+                        Project Modification Commands
+                    </th>
+                    <th class="col-xs-9">
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package" target="_blank">add package</a>  
+                    </td>
+                    <td>Adds a package reference to a project.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-reference" target="_blank">add reference</a>  
+                    </td>
+                    <td>Adds project-to-project (P2P) references.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-remove-package" target="_blank">remove package</a>  
+                    </td>
+                    <td>Removes package reference from the project.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-remove-reference" target="_blank">remove reference</a>  
+                    </td>
+                    <td>Removes project reference
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-list-reference" target="_blank">list reference</a>  
+                    </td>
+                    <td>Lists all project-to-project references
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table table-responsive">
+        <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-xs-3">
+                            Advanced Commands
+                        </th>
+                        <th class="col-xs-9">
+                            Description
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-delete" target="_blank">nuget delete</a>  
+                        </td>
+                        <td>Deletes or unlists a package from the server.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-locals" target="_blank">nuget locals</a>  
+                        </td>
+                        <td>Clears or lists local NuGet resources.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-push" target="_blank">nuget push</a>  
+                        </td>
+                        <td>Pushes a package to the server and publishes it.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-msbuild" target="_blank">msbuild</a>
+                        </td>
+                        <td>Builds a project and all of its dependencies.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script" target="_blank">dotnet install script</a>  
+                        </td>
+                        <td>Script used to install the .NET Core CLI tools and the shared runtime.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</pre>
+</body>
+</html>
+
+
+
+
+
+
+
+
