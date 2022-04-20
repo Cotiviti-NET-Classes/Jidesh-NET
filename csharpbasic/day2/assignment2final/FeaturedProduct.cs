@@ -1,3 +1,5 @@
+using System;
+
 namespace assignment2final;
 
 class FeatureProducts: IProductModel

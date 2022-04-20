@@ -460,6 +460,78 @@ dotnet < command > < argument > < option >
                 </tbody>
             </table>
         </div>
+        Enums
+        Why are Enums required?
+        Enums are strongly typed constants.
+
+        if a program uses set of integral number, consider replacing them with enums.
+        otherwise the program becomes launchSettings
+        *Readable
+        *maintainable
+
+        emums are strongly typed constants. Hence an explict cast is needed to 
+        convert from enumstype to integral type and vice versa
+
+
+        also an enum of one type cannot be implicitly assign to an enum of another type even though the underlying value of their members are the same
+
+        THe default underlying type of an enum is int
+
+        the default value of first element is zero and gets incremented by 1
+        
+        It is possible to customized the underlying type and values
+
+        Enum are value types
+        
+        Enum keyworda(all small letter) is used to create enumerations 
+        where as Enum class contains staticgetvalue() and getNames()
+        method which can be used to list enum underlying type value and getNames
+
+        Some key points of a static constructor are: 
+
+A static constructor does not take access modifiers or have parameters.
+A static constructor is called automatically to initialize the class before the first instance is created or any static members are referenced.
+A static constructor cannot be called directly.
+The user has no control over when the static constructor is executed in the program.
+A typical use of static constructors is when the class is using a log file and the constructor is used to write entries to this file.
+
+Private Constructor in C#
+When a constructor is created with a private specifier, it is not possible for other classes to derive from this class, neither is it possible to create an instance of this class. They are usually used in classes that contain static members only. Some key points of a private constructor are:
+
+One use of a private constructor is when we have only static members.
+It provides an implementation of a singleton class pattern
+Once we provide a constructor that is either private or public or any, the compiler will not add the parameter-less public constructor to the class.
+
+
+write only and read only property of C#
+
+
+Readonly property
+
+Set is used for insert.
+so if we don't want to insert value we don't use set
+so this is called read only
+
+if there is only geeter than its read only property
+
+
+Writeonly property
+for this we only used set method
+
+We know that C# supports const and readonly variables and generally uses them interchangeably, but we also should notice that they offer different behaviors. Always remember, const is compile time and readonly is runtime. This will always help in choosing the correct one according to the situation.    
+
+Let’s look into the behavior of both of these in detail:
+
+const (Compile time constant)
+
+const are “compile time constants”. Compile time constants are a bit faster than run time constants. When performance is the highest criteria and we are sure that value of constant will not change for different release, use const. 
+
+
+Readonly (Run time constant)
+
+readonly defines “run time constants”. Run time constants are a bit slower but are more flexible than compile time constants. The main difference between these are that they are resolved at run time, which means whenever we use a readonly variable it is referenced while when we use const the value is used.     
+
+
 </pre>
 </body>
 </html>

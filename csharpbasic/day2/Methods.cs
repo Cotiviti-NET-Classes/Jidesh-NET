@@ -1,12 +1,14 @@
+using System;
+
 namespace LearningBasic;
 
 
 class MethodLearner
 {
-    void DoSomething()
-    {
-        Console.Write("Doing something...");
-    }
+    // void DoSomething()
+    // {
+    //     Console.Write("Doing something...");
+    // }
 
     // string GetName()
     // {

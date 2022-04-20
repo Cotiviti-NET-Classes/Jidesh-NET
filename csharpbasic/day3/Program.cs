@@ -1,8 +1,61 @@
-﻿// using LearningBasic;
-// using Task;
-using assignment2;
+﻿
+// Customer[] customers=new Customer[3];
+// customers[0]=new Customer
+// {
+//     Name="jidesh",
+//     Gender=1
+// };
+// customers[1]=new Customer
+// {
+//     Name="Dipesh",
+//     Gender=1
+// };
+// customers[2]=new Customer
+// {
+//     Name="lusy",
+//     Gender=2
+// };
 
-using assignment2final;
+// foreach(Customer customer in customers)
+// {
+//     Console.WriteLine("Name = {0} and Gender={1}",customer.Name,GetGender(customer.Gender));
+// }
+
+// static string GetGender(int gender)
+// {
+//     switch(gender)
+//     {
+//         case 0:
+//             return "Unknown";
+//         case 1:
+//             return "Male";
+//         case 2:
+//             return "Female";
+//         default:
+//             return "Invalid data detected";
+
+//     }
+// }
+
+
+// public static void Main()
+// {
+//     Customer[] customers = new Customer[3];
+// }
+
+
+
+
+
+
+
+// TPL tpl = new TPL();
+// tpl.Do();
+
+//day 3
+
+// Y y=new Y();
+// y.Greet("jidesh");
 
 // List<Order> orders = AddSampleData();
 // CustomerModel customer=GetCustomer();
