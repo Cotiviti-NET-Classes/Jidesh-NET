@@ -1,5 +1,9 @@
+//variable decleration for no of character ==> noOfChar
+//variable decleration for no of words ==> noOfWord
+//variable decleration for no of Sentence ==> noOfSentence
+//variable decleration for no of vowel ==> noOfVowel
+//variable decleration for no of special character ==> noOfSpChar
 int noOfChar = 0, noOfWord = 0, noOfSentence = 0, noOfVowel = 0, noOfSpChar = 0;
-
 //put every line as and element of array
 string[] textarray = File.ReadAllLines("test.txt");
 //  Console.WriteLine(textarray[0].Count());
@@ -9,7 +13,6 @@ foreach (string text in textarray)
     noOfWord += text.Split(' ').Length;
     noOfSentence += text.Split("[]!?.:+").Length;
 }
-
 //textContent contains everything even space, line breaks and all special characters
    string textContent=File.ReadAllText("test.txt");
    noOfVowel=System.Text.RegularExpressions.Regex.Matches(textContent.ToLower(),"[aeiou]").Count;
