@@ -4,3 +4,8 @@
 1. Number of sentences
 1. Number of vowels
 1. Number of special characters
+
+
+
+for assignment code 
+[click here](https://github.com/Cotiviti-NET-Classes/Jidesh-NET/blob/main/csharpbasic/executer/program.cs)
