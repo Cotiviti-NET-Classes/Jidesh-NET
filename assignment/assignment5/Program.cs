@@ -7,7 +7,7 @@
 string[] lines = File.ReadAllLines("datas.csv");
 // //1. list of all player from nepal
 Console.WriteLine("Player participated form nepal are");
-foreach(string line in textarray)
+foreach(string line in lines)
 {
     var str=line.Split(",");
 
@@ -19,7 +19,7 @@ foreach(string line in textarray)
 //2. List all chinese players who have won the GOLD.
 
 Console.WriteLine("Plears form china who have won gold are as follows");
-foreach(string line in textarray)
+foreach(string line in lines)
 {
     var str1=line.Split(',');
     if(str1[7]=="CHN" && str1[14]=="Gold")
@@ -30,7 +30,7 @@ foreach(string line in textarray)
 
 // // 3. List all players from USA and group them by sport they were in. Also order the result by sport.
 // Console.WriteLine("Plears form USA with their sports");
-foreach(string line in textarray)
+foreach(string line in lines)
 {
     var str3=line.Split(',');
     if(str3[7]=="USA")
