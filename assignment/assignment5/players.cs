@@ -1,23 +1,21 @@
-// class PlyerInfo
-// {
-//     public int id { get; set; }
-//     public string Name { get; set; }
-//     public char sex { get; set; }
-//     public int height { get; set; }
-//     public int weight { get; set; }
-//     public string team { get; set; }
-//     public string NOC { get; set; }
-//     public string games { get; set; }
-//     public int year { get; set; }
-//     public string? season { get; set; }
-//     public string? city { get; set; }
-//     public string? sprots { get; set; }
-//     public string? eventname { get; set; }
-//     public string? medal { get; set; }
+public class Player
+{
 
-//     // public string NepaliPlayers()
-//     // {
+    public string? Id { get; set; }
+    public string? Name { get; set; }
+    public string? Sex { get; set; }
+    public string? Age { get; set; }
+    public string? Height { get; set; }
+    public string? Weight { get; set; }
+    public string? Team { get; set; }
+    public string? NOC { get; set; }
+    public string? Games { get; set; }
+    public string? Year { get; set; }
+    public string? Season { get; set; }
+    public string? City { get; set; }
+    public string? Sport { get; set; }
+    public string? Event { get; set; }
+    public string? Medal { get; set; }
+    //Year,Season,City,Sport,Event,Medal
 
-//     // }
-
-// }
+}

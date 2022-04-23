@@ -1,0 +1,29 @@
+
+<h1>List of employee here</h1>
+
+    
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Joining date</th>
+        </tr>
+    </thead>
+    <tbody>
+          @{
+            foreach(var e in Model)
+            {
+             <tr>
+          
+            
+            <td>@e.Name</td>
+            <td>@e.Gender</td>
+            <td>@e.JoiningDate</td>
+            
+            
+        </tr>
+            }
+          }         
+    </tbody>
+</table>

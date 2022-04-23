@@ -1,0 +1,53 @@
+view == is seen in web browser
+
+
+cshtml means chshap html
+
+Razor , Aspx is a view engiene
+ 
+
+we will be using Razor
+
+which as extention cshtml
+
+we can write any c# code
+inside
+@{
+
+}
+
+
+entry point is program.cs
+
+html gives structure
+
+css is used for designing, decorating and styling
+css give look and field
+
+js is used for making page interactive
+
+
+wwwroot ==> global file is placed in this directory
+we can put costume css, js and different libraries
+
+appsetting.json
+
+Controllers
+Controllers name search for same name in view
+for ex home Controllers search for home folder in view
+
+we can also give custom route in Controllers
+[route('/xyz)]
+
+In url after url/Controllers/method
+
+view model vs data model
+
+
+UI ma bind huni is view model
+
+
+HR app
+
+model
+Employee,Department, Designation
