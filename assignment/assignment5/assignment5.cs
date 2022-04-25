@@ -10,7 +10,7 @@ class RealTimeExample
 
         // Read the file as one string.
         string[] data = File.ReadAllLines("datas.csv");
-        string[] noCountry=new string[100000000];
+        string[] noCountry=new string[data.Length];
 
 
         List<Player> player = new();
@@ -46,7 +46,7 @@ class RealTimeExample
         foreach (var people in peopleFromNepal)
             Console.WriteLine(people.Name);
 
-        2. List all chinese players who have won the GOLD.
+        // 2. List all chinese players who have won the GOLD.
         var peopleFromChina = player.Where(x => x.NOC.ToUpper().Contains("CHN"));
         var chinaGold = peopleFromChina.Where(x => x.Medal.ToUpper().Contains("GOLD"));
         foreach (var people in chinaGold)
@@ -63,7 +63,7 @@ class RealTimeExample
         {
             Console.WriteLine(usp.Name +"              " +usp.Sport);
         }
-        List all countries with thier medal tally so far. Also, order the list by number of golds won.
+        // List all countries with thier medal tally so far. Also, order the list by number of golds won.
         Console.WriteLine("Country          No. of gold");
         foreach(var line in player.GroupBy(info=>info.NOC)
                                     .Select(group=>new {
