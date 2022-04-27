@@ -51,3 +51,20 @@ HR app
 
 model
 Employee,Department, Designation
+
+dotnet ef
+
+dotnet tool install dotnet-ef -g
+dotnet tol update dotnet-ef -g
+
+in program.cs
+
+buildeer.service.AddCOntrollerWithVIews();
+builder.Services .AddDbContext<HrDbContext>(option=>options.UseSqllite("Data Source=hr.db"))
+dotnet ef migrations add Db_create
+
+dotnet add package 
+
+dotnet ef migrations add Db_create
+
+dotnet ef database update
